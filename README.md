@@ -63,7 +63,7 @@ radius: 10
 prediction_time_minutes: 10
 interval_minutes: 2
 total_duration_minutes: 6
-radius_km: 10
+radius_km: 0.1
 ```
 
 ---
@@ -109,8 +109,8 @@ This script collects and processes vessel data at fixed intervals. It calls func
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/auborealis/ais-api.git
-cd ais-api
+git clone https://github.com/auborealis/vessel-tracker.git
+cd vessel-tracker
 ```
 
 2. **Install required packages**
@@ -151,8 +151,7 @@ project-folder/
 ├── config.yaml                 # Configuration file with API, radius, and other key parameters
 ├── data/                       # Directory for saved CSV files (optional)
 ├── requirements.txt            # Python dependencies
-├── README.md                   # This file
-└── ships_visualization.html    # HTML map visualization of ship positions
+└── README.md                   # This file
 ```
 
 ---
